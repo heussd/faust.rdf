@@ -1,0 +1,14 @@
+
+.DS_Store
+
+.classpath
+
+.project
+
+.settings/org.eclipse.jdt.core.prefs
+
+*.prefs
+
+*.class
+
+target/classes/faust.rdf
