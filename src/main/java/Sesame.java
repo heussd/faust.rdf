@@ -8,7 +8,7 @@ import org.openrdf.rio.helpers.StatementCollector;
 public class Sesame {
 
 	public static void main(String[] args) throws Exception {
-		java.net.URL documentUrl = Thread.currentThread().getContextClassLoader().getResource("./faust.rdf");
+		java.net.URL documentUrl = Thread.currentThread().getContextClassLoader().getResource("./faust.nq");
 		InputStream inputStream = documentUrl.openStream();
 		
 		RDFParser rdfParser = Rio.createParser(RDFFormat.NQUADS);
