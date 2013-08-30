@@ -1,18 +1,18 @@
 # Faust.rdf
 # RDFified excerpts of Johann Wolfgang von Goethe's play Faust I
 #
-# English source texts taken from http://www.gutenberg.org/cache/epub/3023/pg3023.html
+# English source texts taken from http://ebooks.adelaide.edu.au/g/goethe/faust/act3.html
 # German source texts taken from http://de.wikisource.org/wiki/Faust_I
 
 # Common statements about the play
 
-<http://dbpedia.org/page/Faust_I:Faust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_person_100007846> .
+<http://dbpedia.org/page/Faust_I:Faust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_15513> .
 
-<http://dbpedia.org/page/Faust_I:Margaret> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_person_100007846> .
+<http://dbpedia.org/page/Faust_I:Margaret> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_15513> .
 
-<http://dbpedia.org/page/Faust_I:Mephistopheles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_monster_110329945> .
+<http://dbpedia.org/page/Faust_I:Mephistopheles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_134036> .
 
-<http://dbpedia.org/page/Faust_I:Poodle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_poodle_102113335> .
+<http://dbpedia.org/page/Faust_I:Poodle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_32304> .
 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -25,13 +25,21 @@
 <http://dbpedia.org/page/Faust_I:verse1323> <http://www.w3.org/2000/01/rdf-schema#label> "Das also war des Pudels Kern!"@de  .
 <http://dbpedia.org/page/Faust_I:verse1323> <http://www.w3.org/2000/01/rdf-schema#label> "This was the poodle's real core"@en .  
 <http://dbpedia.org/page/Faust_I:verse1323> <http://wiktionary.dbpedia.org/page/number> "1323"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://dbpedia.org/page/Faust_I:verse1323> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_statement_106722453> . 
-<http://dbpedia.org/page/Faust_I:Faust> <http://wiktionary.dbpedia.org/page/says> <http://dbpedia.org/page/Faust_I:verse1323> .
+<http://dbpedia.org/page/Faust_I:verse1323> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_81754> . 
+<http://dbpedia.org/page/Faust_I:Faust> <http://lemon-model.net/lexica/uby/vn/VN_LexicalEntry_430> <http://dbpedia.org/page/Faust_I:verse1323> .
 
+# "Poodle is a disguise"
+<http://dbpedia.org/page/Faust_I:Poodle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_48830> <http://dbpedia.org/page/Faust_I:verse1323> .
+# "Poodle transforms into Mephistopheles"
+<http://dbpedia.org/page/Faust_I:Poodle> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_90692> <http://dbpedia.org/page/Faust_I:Mephistopheles>  <http://dbpedia.org/page/Faust_I:verse1323> . 
 
-<http://dbpedia.org/page/Faust_I:Poodle> <http://wiktionary.dbpedia.org/page/reveals> <http://dbpedia.org/page/Faust_I:MephistophelesIncognito>  <http://dbpedia.org/page/Faust_I:verse1323> . 
-<http://dbpedia.org/page/Faust_I:MephistophelesIncognito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/yago2:wordnet_scholar_110557854> <http://dbpedia.org/page/Faust_I:verse1323> .
+# "Mephistopheles wears clothesOfAScholar"
+<http://dbpedia.org/page/Faust_I:Mephistopheles> <http://lemon-model.net/lexica/uby/vn/VN_LexicalEntry_1437> _:clothesOfAScholar <http://dbpedia.org/page/Faust_I:verse1323> . 
 
+# "clothesOfAScholar are clothes"
+_:clothesOfAScholar <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_63198> . 
+# "Scholar(s) wear clothesOfAScholar"
+<http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_99198> <http://lemon-model.net/lexica/uby/vn/VN_LexicalEntry_1437> _:clothesOfAScholar .
 
 
 # Verse 1324
@@ -43,14 +51,23 @@
 <http://dbpedia.org/page/Faust_I:verse1324> <http://wiktionary.dbpedia.org/page/number> "1324"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://dbpedia.org/page/Faust_I:verse1324a> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/page/Faust_I:verse1324> .
 <http://dbpedia.org/page/Faust_I:verse1324b> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/page/Faust_I:verse1324> .
-<http://dbpedia.org/page/Faust_I:verse1324a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_questioning_107193184> .
-<http://dbpedia.org/page/Faust_I:verse1324b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_statement_106722453>	 .  
-<http://dbpedia.org/page/Faust_I:Faust> <http://wiktionary.dbpedia.org/page/asks> <http://dbpedia.org/page/Faust_I:verse1324a> .
-<http://dbpedia.org/page/Faust_I:Faust> <http://wiktionary.dbpedia.org/page/says> <http://dbpedia.org/page/Faust_I:verse1324b> .
+# "verse1324a is a question"
+<http://dbpedia.org/page/Faust_I:verse1324a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_153777> .
+# "verse1324b is a statement"
+<http://dbpedia.org/page/Faust_I:verse1324b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_81754>	 .  
+<http://dbpedia.org/page/Faust_I:Faust> <http://lemon-model.net/lexica/uby/vn/VN_LexicalEntry_1993> <http://dbpedia.org/page/Faust_I:verse1324a> .
+<http://dbpedia.org/page/Faust_I:Faust> <http://lemon-model.net/lexica/uby/vn/VN_LexicalEntry_430> <http://dbpedia.org/page/Faust_I:verse1324b> .
 
 
-<http://dbpedia.org/page/Faust_I:MephistophelesIncognito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_scholar_110557854> <http://dbpedia.org/page/Faust_I:verse1324a> .
-<http://dbpedia.org/page/Faust_I:verse1324a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_fun_106780882> <http://dbpedia.org/page/Faust_I:verse1324b> .
+# "Mephistopheles is a travelingScholar"
+<http://dbpedia.org/page/Faust_I:Mephistopheles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:travelingScholar <http://dbpedia.org/page/Faust_I:verse1324a> .
+# "travelingScholar is a scholar"
+_:travelingScholar <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/vn/WN_LexicalEntry_99198> .
+# "travelingScholar is (also) a traveler"
+_:travelingScholar <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_115017> .
+
+# "Verse 1324a amuses Faust"
+<http://dbpedia.org/page/Faust_I:verse1324a> <http://lemon-model.net/lexica/uby/vn/VN_LexicalEntry_2516> <http://dbpedia.org/page/Faust_I:Faust>  <http://dbpedia.org/page/Faust_I:verse1324b> .
 
 
 
@@ -61,12 +78,15 @@
 <http://dbpedia.org/page/Faust_I:verse1325> <http://www.w3.org/2000/01/rdf-schema#label> "Ich salutire den gelehrten Herrn!"@de .
 <http://dbpedia.org/page/Faust_I:verse1325> <http://www.w3.org/2000/01/rdf-schema#label> "The learned gentleman I bow before"@en .
 <http://dbpedia.org/page/Faust_I:verse1325> <http://wiktionary.dbpedia.org/page/number> "1325"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://dbpedia.org/page/Faust_I:verse1325> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_statement_106722453>	.
-<http://dbpedia.org/page/Faust_I:MephistophelesIncognito>  <http://wiktionary.dbpedia.org/page/says> <http://dbpedia.org/page/Faust_I:verse1325> .
+<http://dbpedia.org/page/Faust_I:verse1325> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_81754>	.
+<http://dbpedia.org/page/Faust_I:Mephistopheles>  <http://lemon-model.net/lexica/uby/vn/VN_LexicalEntry_430> <http://dbpedia.org/page/Faust_I:verse1325> .
 
 
-<http://dbpedia.org/page/Faust_I:verse1324a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_truth_105819453> <http://dbpedia.org/page/Faust_I:verse1325> .
-<http://dbpedia.org/page/Faust_I:MephistophelesIncognito> <http://wiktionary.dbpedia.org/page/appreciates> <http://dbpedia.org/page/Faust_I:Faust> <http://dbpedia.org/page/Faust_I:verse1325> .
+# "Verse 1324a is true"
+<http://dbpedia.org/page/Faust_I:verse1324a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_53631> <http://dbpedia.org/page/Faust_I:verse1325> .
+
+# "Mephistopheles appreciates Faust"
+<http://dbpedia.org/page/Faust_I:Mephistopheles> <http://lemon-model.net/lexica/uby/vn/VN_LexicalEntry_731> <http://dbpedia.org/page/Faust_I:Faust> <http://dbpedia.org/page/Faust_I:verse1325> .
 
 
 
@@ -77,9 +97,9 @@
 <http://dbpedia.org/page/Faust_I:verse4610> <http://www.w3.org/2000/01/rdf-schema#label> "Heinrich, mir grauts vor dir!"@de .
 <http://dbpedia.org/page/Faust_I:verse4610> <http://www.w3.org/2000/01/rdf-schema#label> "Henry! I shudder to think of thee."@en .
 <http://dbpedia.org/page/Faust_I:verse4610> <http://wiktionary.dbpedia.org/page/number> "4610"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://dbpedia.org/page/Faust_I:verse4610> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://yago-knowledge.org/resource/wordnet_statement_106722453> .
-<http://dbpedia.org/page/Faust_I:Magareth> <http://wiktionary.dbpedia.org/page/says> <http://dbpedia.org/page/Faust_I:verse4610> .
+<http://dbpedia.org/page/Faust_I:verse4610> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_81754> .
+<http://dbpedia.org/page/Faust_I:Magareth> <http://lemon-model.net/lexica/uby/vn/VN_LexicalEntry_430> <http://dbpedia.org/page/Faust_I:verse4610> .
 
 
-<http://dbpedia.org/page/Faust_I:Magareth> <http://wiktionary.dbpedia.org/page/fears> <http://dbpedia.org/page/Faust_I:Faust <http://dbpedia.org/page/Faust_I:verse4610> .
+<http://dbpedia.org/page/Faust_I:Magareth> <http://lemon-model.net/lexica/uby/vn/VN_LexicalEntry_845> <http://dbpedia.org/page/Faust_I:Faust <http://dbpedia.org/page/Faust_I:verse4610> .
 
